@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background"
+    >
+
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="48dp"
+        >
+        <ImageView
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:src="@drawable/ic_logo"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="89dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="4dp"
+            android:src="@drawable/ic_login_person" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:gravity="left"
+            android:inputType="text"
+            android:hint="Email/Account"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:maxLines="1"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="48dp"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="4dp"
+            android:src="@drawable/ic_login_lock"
+            />
+        <EditText
+            android:id="@+id/et_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:gravity="left"
+            android:inputType="text"
+            android:hint="Password"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:maxLines="1"
+            />
+
+        <ImageView
+            android:id="@+id/iv_pwd_switch"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginBottom="6dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_pwd_off" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="32dp"
+        android:layout_weight="1">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@color/black"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+
+
+</LinearLayout>
